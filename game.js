@@ -23,6 +23,7 @@ document.addEventListener("keydown", pressOn);
 document.addEventListener("keyup", pressOff);
 
 
+//function to make the road lines moving//
 
 function moveLines() {
     let lines = document.querySelectorAll(".line");
@@ -45,6 +46,8 @@ function isCollide(a, b) {
     return !(
         (aRect.bottom < bRect.top) || (aRect.top > bRect.bottom) || (aRect.right < bRect.left) || (aRect.left > bRect.right))
 }
+
+//Function to create the oponent car's moving//
 
 function moveEnemy(car) {
     let ele = document.querySelectorAll(".enemy");
@@ -109,6 +112,8 @@ function endGame() {
     startScreen.classList.remove("hide");
 }
 
+//main function to start the game
+
 function start() {
     startScreen.classList.add("hide");
     //gameArea.classList.remove("hide");
@@ -140,6 +145,7 @@ function start() {
     }
 }
 
+//function to get the random color for the oponent car's//
 function randomColor() {
     function c() {
         let hex = Math.floor(Math.random() * 256).toString(16);
