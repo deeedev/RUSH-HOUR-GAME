@@ -9,7 +9,7 @@
             margin: auto;
             width: 50px;
             height: 100px;
-            background-color: white;
+            background-color: blue;
             background-image: url(./Assets/car-1.png);
             line-height: 38px;
             font-size: 1.7em;
@@ -37,7 +37,7 @@
         }
 
         .gameArea {
-            background-color: black;
+            background-color: green;
             width: 400px;
             height: 100%;
             overflow: hidden;

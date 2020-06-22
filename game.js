@@ -127,6 +127,7 @@ function start() {
         div.style.top = (x * 150) + "px";
         gameArea.appendChild(div);
     }
+    
     window.requestAnimationFrame(playGame);
     let car = document.createElement("div");
     //car.innerText = "Car";
